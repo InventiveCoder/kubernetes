@@ -770,7 +770,7 @@ func testSaveInto(t *testing.T, protocol Protocol) {
 COMMIT
 # Completed on Thu Jan 19 11:38:09 2017`, iptablesSaveCmd+version)
 
-	stderrOutput := "#STDERR OUTPUT" // SaveInto() should should NOT capture stderr into the buffer
+	stderrOutput := "#STDERR OUTPUT" // SaveInto() should NOT capture stderr into the buffer
 
 	fcmd := fakeexec.FakeCmd{
 		CombinedOutputScript: []fakeexec.FakeAction{

@@ -2310,7 +2310,7 @@ The cause PR is [reverted](https://github.com/kubernetes/kubernetes/pull/117194)
 
 ### Other (Cleanup or Flake)
 
-- Added basic Denial Of Service prevention for the the node-local kubelet `podresource` API ([#116459](https://github.com/kubernetes/kubernetes/pull/116459), [@ffromani](https://github.com/ffromani)) [SIG Node and Testing]
+- Added basic Denial Of Service prevention for the node-local kubelet `podresource` API ([#116459](https://github.com/kubernetes/kubernetes/pull/116459), [@ffromani](https://github.com/ffromani)) [SIG Node and Testing]
 - Callers of `wait.ExponentialBackoffWithContext` now must pass a `ConditionWithContextFunc` to be consistent with the signature and avoid creating a duplicate context. If your condition does not need a context you can use the `ConditionFunc.WithContext()` helper to ignore the context, or use `ExponentialBackoff` directly. ([#115113](https://github.com/kubernetes/kubernetes/pull/115113), [@smarterclayton](https://github.com/smarterclayton))
 - Changed docs for `--contention-profiling` flag to reflect it performed block profiling ([#114490](https://github.com/kubernetes/kubernetes/pull/114490), [@MadhavJivrajani](https://github.com/MadhavJivrajani))
 - E2e framework: added `--report-complete-ginkgo` and `--report-complete-junit` parameters. They work like `ginkgo --json-report <report dir>/ginkgo/report.json --junit-report <report dir>/ginkgo/report.xml`. ([#115678](https://github.com/kubernetes/kubernetes/pull/115678), [@pohly](https://github.com/pohly)) [SIG Testing]
@@ -2900,7 +2900,7 @@ name | architectures
 
 ### Other (Cleanup or Flake)
 
-- Added basic Denial Of Service prevention for the the node-local kubelet `podresource` API ([#116459](https://github.com/kubernetes/kubernetes/pull/116459), [@ffromani](https://github.com/ffromani)) [SIG Node and Testing]
+- Added basic Denial Of Service prevention for the node-local kubelet `podresource` API ([#116459](https://github.com/kubernetes/kubernetes/pull/116459), [@ffromani](https://github.com/ffromani)) [SIG Node and Testing]
 - Introduce new metrics removing the redundant subsystem in kube-apiserver pod logs metrics and deprecate the original ones:
   - kube_apiserver_pod_logs_pods_logs_backend_tls_failure_total becomes kube_apiserver_pod_logs_backend_tls_failure_total
   - kube_apiserver_pod_logs_pods_logs_insecure_backend_total becomes kube_apiserver_pod_logs_insecure_backend_total ([#114497](https://github.com/kubernetes/kubernetes/pull/114497), [@dgrisonnet](https://github.com/dgrisonnet)) [SIG API Machinery]
